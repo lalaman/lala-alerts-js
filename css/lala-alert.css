@@ -51,17 +51,16 @@ html, body {
 #lala-alert-container {
     position: absolute;
     display: table;
-    height: 100%;
+    height: auto;
     width: 300px;
     top: 0;
     right: 0;
-    z-index: 99;
 }
 
 #lala-alert-wrapper {
     display: table-cell;
     vertical-align: bottom;
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 15px;
     box-sizing: border-box;
