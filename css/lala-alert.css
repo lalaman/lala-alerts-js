@@ -53,7 +53,7 @@ html, body {
     display: table;
     height: auto;
     width: 300px;
-    top: 0;
+    bottom: 0;
     right: 0;
 }
 
