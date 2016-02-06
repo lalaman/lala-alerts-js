@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+    <title>Lala Alerts</title>
+
+    <!-- For mobile only -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="css/lala-alert.css">
+    <script type="text/javascript" src="js/lala-alert.js"></script>
+
+    <!-- Third-party shit -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+<body>
+    <!-- Content -->
+    <div class="body-container">
+        <button class="alert-button" alert-message="Your file has been successfully uploaded." alert-status="success" id="alert-success">Alert Success</button>
+        <button class="alert-button" alert-message="You have 3 new messages in your inbox." alert-status="info" id="alert-info">Alert Info</button>
+        <button class="alert-button" alert-message="You've used up 80% of this month's bandwidth." alert-status="warning" id="alert-warning">Alert Warning</button>
+        <button class="alert-button" alert-message="File upload unsuccessful. Please try again." alert-status="danger" id="alert-danger">Alert Danger</button>
+    </div>
+
+    <!-- Lala alert section -->
+    <div id="lala-alert-container"><div id="lala-alert-wrapper"></div></div>
+</body>
+</html>
