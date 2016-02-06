@@ -4,4 +4,4 @@ I only made this because I was bored. But anyway, this alert plugin is for poppi
 
 I used vanilla js for this alert plugin so it should run pretty fast. Feel free to optimize it even more.
 
-View live demo (link not posted yet)
+View [live demo](http://lalaman.github.io/lala-alerts-js.)
