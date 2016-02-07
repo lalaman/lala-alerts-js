@@ -26,10 +26,11 @@ Include the JS file by adding this to the top of your HTML header. Change the sr
 <script type="text/javascript" src="js/lala-alert.js"></script>
 ```
 
-Add these elements to after your content container before the </body> ends. This is where the alert boxes will populate:
+Add these elements to after your content container before the ‘‘‘</body>’’’ ends. This is where the alert boxes will populate:
 ```html
     <!-- Lala alert section -->
     <div id="lala-alert-container"><div id="lala-alert-wrapper"></div></div>
+</body>
 ```
 
 Call the alert boxes using 4 statuses provided (success, info, warning, danger). They must be in lowercase to work.
