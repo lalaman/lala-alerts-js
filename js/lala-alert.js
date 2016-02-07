@@ -20,23 +20,26 @@ window.onload = function() {
         info_button = document.getElementById("alert-info"),
         warning_button = document.getElementById("alert-warning"),
         danger_button = document.getElementById("alert-danger"),
-        button_array = [success_button, info_button, warning_button, danger_button];
+        button_array = [success_button, info_button, warning_button, danger_button],
+        timeout = 8000; //Number of milliseconds before alert disappears
 
     //Attach listeners for all buttons
     for (var i = 0; i < button_array.length; i++) {
         button_array[i].addEventListener("click", function() {
             var message = this.getAttribute("alert-message");
             var status =this.getAttribute("alert-status");
-            createAlert(message, status);
+            createAlert(message, status, timeout);
         });
     };
 
     /**
     * Creates an alert div element
     * @param {String} message
+    * @param {String} status
+    * @param {Integer} timeout
     * @return {Element} sum
     */
-    function createAlert(message, status) {
+    function createAlert(message, status, timeout) {
 
         //Create alert element
         var alert = document.createElement("div");
@@ -66,8 +69,9 @@ window.onload = function() {
         //Prepend new alert to container
         alert_wrapper.insertBefore(alert, alert_wrapper.children[0]);
 
+
         setTimeout(function() {
             alert.getElementsByTagName("span")[0].click();
-        }, 8000);
+        }, timeout);
     };
 };
