@@ -12,14 +12,72 @@ html, body {
 }
 
 /*==================================
-    Body content
+    Header
 ====================================*/
-.body-container {
-    margin-top: 15%;
+
+header {
+    background-color: #f0da50;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: auto 100%;
+    height: 300px;
+    width: 100%;
+}
+
+.header-container {
+    margin: 0 auto;
+}
+
+.project-title {
+    text-align: center;
+    padding: 6% 0 3%;
+    font-weight: 700;
+    font-size: 50px
+}
+
+.project-links {
+    text-align: center;
+}
+
+.project-links a {
+    border: 4px solid rgba(50,50,48,0.6);
+    text-decoration: none;
+    display: inline-block;
+    margin:5px; 30px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #484848;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out; /* Firefox 4 */
+    -webkit-transition: all 0.25s ease-in-out; /* Safari and Chrome */
+    -o-transition: all 0.25s ease-in-out; /* Opera */
+    -ms-transition: all 0.25s ease-in-out; /* Explorer 10 */
+}
+
+.project-links a:hover {
+    border: 4px solid rgba(50,50,48,1);
+    background-color: rgba(50,50,48,1);
+    color: yellow;
+}
+
+
+/*==================================
+    Content
+====================================*/
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 0%;
+    padding: 0 20px;
     text-align: center;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+
+.content-container p {
+    font-size: 16px;
 }
 
 .alert-button {
