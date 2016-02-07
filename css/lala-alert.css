@@ -48,6 +48,7 @@ header {
     padding: 15px 20px;
     font-size: 16px;
     color: #484848;
+    outline: none;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out; /* Firefox 4 */
     -webkit-transition: all 0.25s ease-in-out; /* Safari and Chrome */
@@ -82,10 +83,10 @@ header {
 }
 
 .alert-button {
-    display: block;
+    display: inline-block;
     background-color: #3473c1;
     border-radius: 2px;
-    margin: 0 auto 10px;
+    margin: 10px;
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;

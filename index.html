@@ -16,41 +16,41 @@
 
 </head>
 <body>
+    <div style="overflow: hidden">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="project-title">
+                    Lala Alerts
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/lalaman/lala-alerts-js">View on GitHub</a>
+                    <a href="https://github.com/lalaman/lala-alerts-js/archive/master.zip">Download .zip</a>
+                    <a href="https://github.com/lalaman/lala-alerts-js/archive/master.tar.gz">Download tar.gz</a>
+                </div>
+            </div>
+        </header>
 
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="project-title">
-                Lala Alerts
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/lalaman/lala-alerts-js">View on GitHub</a>
-                <a href="https://github.com/lalaman/lala-alerts-js/archive/master.zip">Download .zip</a>
-                <a href="https://github.com/lalaman/lala-alerts-js/archive/master.tar.gz">Download tar.gz</a>
-            </div>
+        <!-- Content -->
+        <div class="content-container" style="overflow:auto">
+            <h1>Lala Alerts Demo</h1>
+            <p>
+                This alert plugin is for popping up alerts of different statuses (currently 4 right now). But feel free to add more if you'd like. I took the colours for Twitter's Bootstrap alerts. I used vanilla js for this alert plugin so it should run pretty fast. Feel free to optimize it even more.
+            </p>
+            <p>
+                Click on one of the buttons to see an alert pop-up. By default, the alerts exist for 8 seconds before it disappears (destroyed in memory and in the DOM).
+            </p>
+            <button class="alert-button" alert-message="Your file has been successfully uploaded." alert-status="success" id="alert-success">Alert Success</button>
+            <button class="alert-button" alert-message="You have 3 new messages in your inbox." alert-status="info" id="alert-info">Alert Info</button>
+            <button class="alert-button" alert-message="You've used up 80% of this month's bandwidth." alert-status="warning" id="alert-warning">Alert Warning</button>
+            <button class="alert-button" alert-message="File upload unsuccessful. Please try again." alert-status="danger" id="alert-danger">Alert Danger</button>
+
+            <p>
+                This is just some more content to fill up some space so it looks like a real website.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
         </div>
-    </header>
-
-    <!-- Content -->
-    <div class="content-container">
-        <h1>Lala Alerts Demo</h1>
-        <p>
-            This alert plugin is for popping up alerts of different statuses (currently 4 right now). But feel free to add more if you'd like. I took the colours for Twitter's Bootstrap alerts. I used vanilla js for this alert plugin so it should run pretty fast. Feel free to optimize it even more.
-        </p>
-        <p>
-            Click on one of the buttons to see an alert pop-up. By default, the alerts exist for 8 seconds before it disappears (destroyed in memory and in the DOM).
-        </p>
-        <button class="alert-button" alert-message="Your file has been successfully uploaded." alert-status="success" id="alert-success">Alert Success</button>
-        <button class="alert-button" alert-message="You have 3 new messages in your inbox." alert-status="info" id="alert-info">Alert Info</button>
-        <button class="alert-button" alert-message="You've used up 80% of this month's bandwidth." alert-status="warning" id="alert-warning">Alert Warning</button>
-        <button class="alert-button" alert-message="File upload unsuccessful. Please try again." alert-status="danger" id="alert-danger">Alert Danger</button>
-
-        <p>
-            This is just some more content to fill up some space so it looks like a real website.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
     </div>
-
     <!-- Lala alert section -->
     <div id="lala-alert-container"><div id="lala-alert-wrapper"></div></div>
 </body>
