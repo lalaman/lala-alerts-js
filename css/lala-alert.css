@@ -68,7 +68,7 @@ header {
 .content-container {
     max-width: 900px;
     margin: 0 auto;
-    margin-top: 0%;
+    margin-bottom: 20%;
     padding: 0 20px;
     text-align: center;
     box-sizing: border-box;
