@@ -14,7 +14,11 @@
 =============================================================*/
 
 window.onload = function() {
-
+    /*
+    *   Everything inside this window.onload function is custom/personal
+    *   JS that you don't need worry about. The only section you need is
+    *   the createAlert function below.
+    */
     var alert_wrapper = document.getElementById("lala-alert-wrapper"),
         success_button = document.getElementById("alert-success"),
         info_button = document.getElementById("alert-info"),
@@ -31,47 +35,48 @@ window.onload = function() {
             createAlert(message, status, timeout);
         });
     };
+};
 
-    /**
-    * Creates an alert div element
-    * @param {String} message
-    * @param {String} status
-    * @param {Integer} timeout
-    * @return {Element} sum
-    */
-    function createAlert(message, status, timeout) {
+/**
+* Creates an alert div element
+* @param {String} message
+* @param {String} status
+* @param {Integer} timeout
+* @return {Element} sum
+*/
+function createAlert(message, status, timeout) {
 
-        //Create alert element
-        var alert = document.createElement("div");
-        alert.className += "lala-alert ";
+    //Create alert element
+    var alert = document.createElement("div");
+    alert.className += "lala-alert ";
 
-        //Attach correct colour to alert
-        var status_class = "alert-" + status + " ";
-        alert.className += status_class;
+    //Attach correct colour to alert
+    var status_class = "alert-" + status + " ";
+    alert.className += status_class;
 
-        //Create close button
-        var close_button = document.createElement("span");
-        close_button.className += " close-alert-x glyphicon glyphicon-remove";
-        close_button.addEventListener("click", function() {
-            var parent = this.parentNode;
-            parent.className += " fade-out";
-            if (parent.parentNode) {
-                setTimeout(function() {
-                    parent.parentNode.removeChild(parent)
-                }, 500);
-            }
-        });
+    //Create close button
+    var close_button = document.createElement("span");
+    close_button.className += " close-alert-x glyphicon glyphicon-remove";
+    close_button.addEventListener("click", function() {
+        var parent = this.parentNode;
+        parent.className += " fade-out";
+        if (parent.parentNode) {
+            setTimeout(function() {
+                parent.parentNode.removeChild(parent)
+            }, 500);
+        }
+    });
 
-        //Add message and close button
-        alert.innerHTML = message;
-        alert.appendChild(close_button);
+    //Add message and close button
+    alert.innerHTML = message;
+    alert.appendChild(close_button);
 
-        //Prepend new alert to container
-        alert_wrapper.insertBefore(alert, alert_wrapper.children[0]);
+    //Prepend new alert to container
+    var alert_wrapper = document.getElementById("lala-alert-wrapper");
+    alert_wrapper.insertBefore(alert, alert_wrapper.children[0]);
 
-
-        setTimeout(function() {
-            alert.getElementsByTagName("span")[0].click();
-        }, timeout);
-    };
+    //If they haven't clicked close within the timeout period, simulate click
+    setTimeout(function() {
+        alert.getElementsByTagName("span")[0].click();
+    }, timeout);
 };
