@@ -74,7 +74,7 @@ html, body {
 
 .lala-alert {
     position: relative;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 15px 30px;
     margin-top: 15px;
     opacity: 1;
@@ -105,7 +105,7 @@ html, body {
 .alert-warning {
     color: #8a6d3b;
     background-color: #fcf8e3;
-    border-color: #faf2cc;
+    border-color: #ffe773;
 }
 
 .alert-danger {
