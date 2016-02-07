@@ -26,7 +26,7 @@ Include the JS file by adding this to the top of your HTML header. Change the sr
 <script type="text/javascript" src="js/lala-alert.js"></script>
 ```
 
-Add these elements to after your content container before the body tag ends. This is where the alert boxes will populate:
+Add these elements to after your content container before the \</body> tag ends. This is where the alert boxes will populate:
 ```html
     <!-- Lala alert section -->
     <div id="lala-alert-container"><div id="lala-alert-wrapper"></div></div>
@@ -60,4 +60,9 @@ my_button.addEventListener("click", function() {
 
 ```
 
-Once this is done, the alert boxes will add themselves to <div id="lala-alert-wrapper"></div>
+### Inline HTML example:
+```html
+<button onclick="createArray('This is a warning message!','warning',5000)">Show warning message</button>
+```
+
+Once this is done, the alert boxes will add themselves to \<div id="lala-alert-wrapper">\</div>
