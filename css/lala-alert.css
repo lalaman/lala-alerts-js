@@ -79,11 +79,13 @@ html, body {
     margin-top: 15px;
     opacity: 1;
     border: 1px solid transparent;
+    cursor: default;
     transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */
+
 }
 
 .alert-success {
