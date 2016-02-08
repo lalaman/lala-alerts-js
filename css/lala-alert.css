@@ -79,11 +79,7 @@ html, body {
     margin-top: 15px;
     opacity: 1;
     border: 1px solid transparent;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out; /* Firefox 4 */
-    -webkit-transition: all 0.5s ease-in-out; /* Safari and Chrome */
-    -o-transition: all 0.5s ease-in-out; /* Opera */
-    -ms-transition: all 0.5s ease-in-out; /* Explorer 10 */
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */

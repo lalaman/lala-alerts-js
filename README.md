@@ -7,11 +7,15 @@ I used vanilla js for this alert plugin so it should run pretty fast. Feel free 
 View [live demo](http://lalaman.github.io/lala-alerts-js/)
 
 # Usage
-You can choose to include the CSS file inside this project or you can customize the colurs and size of the alert boxes:
+You can choose to include the CSS file inside this project or you can customize the colours, size, and fade out duration of the alert boxes:
 
 ```css
 #lala-alert-container {
     width: 300px; /* Customize the width! */
+}
+
+.lala-alert {
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
 }
 
 .alert-success {
@@ -41,7 +45,7 @@ $("#my_button").click(function() {
   var message = "My alert message!";
   var status = "info";    /* There are 4 statuses: success, info, warning, danger  */
   var timeout = 5000;     /* 5000 here means the alert message disappears after 5 seconds. */
-  
+
   createAlert(message, status, timeout);
 });
 ```
@@ -54,7 +58,7 @@ my_button.addEventListener("click", function() {
   var message = "My alert message!";
   var status = "info";    /* There are 4 statuses: success, info, warning, danger  */
   var timeout = 5000;     /* 5000 here means the alert message disappears after 5 seconds. */
-  
+
   createAlert(message, status, timeout);
 });
 

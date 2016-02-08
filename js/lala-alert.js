@@ -46,6 +46,8 @@ window.onload = function() {
 */
 function createAlert(message, status, timeout) {
 
+    var timeout_check;
+
     //Create alert element
     var alert = document.createElement("div");
     alert.className += "lala-alert ";
@@ -57,14 +59,33 @@ function createAlert(message, status, timeout) {
     //Create close button
     var close_button = document.createElement("span");
     close_button.className += " close-alert-x glyphicon glyphicon-remove";
+
+    /*
+        There are 3 event listeners:
+            1. Clicking x to close alert
+            2. Mousing over to prevent timeout
+            3. Mousing out to start timeout
+    */
     close_button.addEventListener("click", function() {
         var parent = this.parentNode;
-        parent.className += " fade-out";
-        if (parent.parentNode) {
-            setTimeout(function() {
-                parent.parentNode.removeChild(parent)
-            }, 500);
-        }
+        parent.parentNode.removeChild(parent);
+    });
+
+    alert.addEventListener("mouseover", function() {
+        this.classList.remove("fade-out");
+        clearTimeout(timeout_check);
+    });
+
+    alert.addEventListener("mouseout", function() {
+        timeout_check = setTimeout(function() {
+            var parent = alert.parent;
+            alert.className += " fade-out";
+            if (alert.parentNode) {
+                timeout_check = setTimeout(function() {
+                    alert.parentNode.removeChild(alert)
+                }, 500);
+            }
+        }, 3000);
     });
 
     //Add message and close button
@@ -75,8 +96,14 @@ function createAlert(message, status, timeout) {
     var alert_wrapper = document.getElementById("lala-alert-wrapper");
     alert_wrapper.insertBefore(alert, alert_wrapper.children[0]);
 
-    //If they haven't clicked close within the timeout period, simulate click
-    setTimeout(function() {
-        alert.getElementsByTagName("span")[0].click();
+    //If they haven't clicked close within the timeout period, fade out and remove element
+    timeout_check = setTimeout(function() {
+        var parent = alert;
+        parent.className += " fade-out";
+        if (parent.parentNode) {
+            timeout_check = setTimeout(function() {
+                parent.parentNode.removeChild(parent)
+            }, 500);
+        }
     }, timeout);
 };
