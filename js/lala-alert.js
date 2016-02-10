@@ -45,7 +45,8 @@ window.onload = function() {
 * @return {Element} sum
 */
 function createAlert(message, status, timeout) {
-
+	
+	//Used to determine whether to remove setTimeout or not
     var timeout_check;
 
     //Create alert element
