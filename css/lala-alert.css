@@ -109,67 +109,65 @@ header {
 /*==================================
     Alert container
 ====================================*/
-#lala-alert-container {
-    position: absolute;
-    display: table;
-    height: auto;
-    width: 300px;
-    bottom: 0;
-    right: 0;
-}
-
-#lala-alert-wrapper {
-    display: table-cell;
-    vertical-align: bottom;
-    height: auto;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-/*==================================
-    Alerts
-====================================*/
-
 .lala-alert {
     position: relative;
-    border-radius: 3px;
-    padding: 15px 30px;
+    padding: 25px 30px 20px;
+	font-size: 15px;
     margin-top: 15px;
     opacity: 1;
+	border-radius: 3px;
     border: 1px solid transparent;
     cursor: default;
-    transition: all 0.5s ease-in-out; /* Edit for fadeout time */
+    transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */
 }
 
-.alert-success {
-    color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d0e9c6;
+.lala-alert span {
+	opacity: 0.7;
+	transition: all 0.25s ease-in-out;   /* Edit for fadeout time */
 }
 
-.alert-info {
-    color: #31708f;
-    background-color: #d9edf7;
-    border-color: #bcdff1;
+.lala-alert span:hover {
+	opacity: 1.0;
+}
+
+.alert-success {
+    color: #ffffff;
+    background-color: #37c1aa;
+}
+
+.alert-success > span { 
+	color: #0b6f5e;
+}
+
+.alert-info { 
+	color: #ffffff; 
+	background-color: #3473c1;
+}
+
+.alert-info > span { 
+	color: #1e4567;
 }
 
 .alert-warning {
-    color: #8a6d3b;
-    background-color: #fcf8e3;
-    border-color: #ffe773;
+    color: #6b7117;
+    background-color: #ffee9e;
+}
+
+.alert-warning > span {
+	color: #8a6d3b;
 }
 
 .alert-danger {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebcccc;
+    color: #ffffff;
+    background-color: #a20043;
+}
+
+.alert-danger > span {
+	color: #6f1414;
 }
 
 .close-alert-x {
