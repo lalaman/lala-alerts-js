@@ -78,6 +78,7 @@ html, body {
 	font-size: 15px;
     margin-top: 15px;
     opacity: 1;
+	line-height: 1.4;
 	border-radius: 3px;
     border: 1px solid transparent;
     cursor: default;
@@ -139,6 +140,7 @@ html, body {
     top: 10px;
     right: 10px;
     cursor: pointer;
+	outline: none;
 }
 
 .fade-out {
