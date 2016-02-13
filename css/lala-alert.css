@@ -179,7 +179,7 @@ header {
 
 .alert-warning {
     color: #6b7117;
-    background-color: #d64f62;
+    background-color: #ffee9e;
 }
 
 .alert-warning > span {
@@ -188,7 +188,7 @@ header {
 
 .alert-danger {
     color: #ffffff;
-    background-color: #8a6d3b;
+    background-color: #d64f62;
 }
 
 .alert-danger > span {
