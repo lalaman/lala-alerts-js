@@ -136,10 +136,11 @@ header {
 .lala-alert {
     position: relative;
     padding: 25px 30px 20px;
-	font-size: 15px;
+    font-size: 15px;
     margin-top: 15px;
     opacity: 1;
-	border-radius: 3px;
+    line-height: 1.4;
+    border-radius: 3px;
     border: 1px solid transparent;
     cursor: default;
     transition: all 0.5s ease-in-out;   /* Edit for fadeout time */
@@ -178,7 +179,7 @@ header {
 
 .alert-warning {
     color: #6b7117;
-    background-color: #ffee9e;
+    background-color: #d64f62;
 }
 
 .alert-warning > span {
