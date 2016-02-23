@@ -7,6 +7,9 @@ I used vanilla js for this alert plugin so it should run pretty fast. Feel free 
 View [live demo](http://lalaman.github.io/lala-alerts-js/)
 
 # Usage
+
+##### You will need bootstrap fonts and css in this project to see the "x" (close button) button on the alerts
+
 You can choose to include the CSS file inside this project or you can customize the colours, size, and fade out duration of the alert boxes:
 
 ```css
