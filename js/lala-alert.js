@@ -45,13 +45,13 @@ window.onload = function() {
 * @return {Element} sum
 */
 function createAlert(message, status, timeout) {
-	
+
 	//Used to determine whether to remove setTimeout or not
     var timeout_check;
 
     //Create alert element
     var alert = document.createElement("div");
-    alert.className += "lala-alert ";
+    alert.className += "animation-target lala-alert ";
 
     //Attach correct colour to alert
     var status_class = "alert-" + status + " ";
