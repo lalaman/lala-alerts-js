@@ -51,7 +51,8 @@ html, body {
 #lala-alert-container {
     position: fixed;
     height: auto;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     bottom: 0;
     right: 0;
 }
