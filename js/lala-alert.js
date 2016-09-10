@@ -50,7 +50,7 @@ function createAlert(message, status, timeout) {
 
     //Create alert element
     var alert = document.createElement("div");
-    alert.className += "lala-alert ";
+    alert.className += "animation-target lala-alert ";
 
     //Attach correct colour to alert
     var status_class = "alert-" + status + " ";
