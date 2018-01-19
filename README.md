@@ -69,7 +69,7 @@ my_button.addEventListener("click", function() {
 
 ### Inline HTML example:
 ```html
-<button onclick="createArray('This is a warning message!','warning',5000)">Show warning message</button>
+<button onclick="createAlert('This is a warning message!','warning',5000)">Show warning message</button>
 ```
 
 Once this is done, the alert boxes will add themselves to \<div id="lala-alert-wrapper">\</div>
